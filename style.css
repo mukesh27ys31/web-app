@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f7f7f7;
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.1);
+}
+
+/* Quote Box */
+#quote-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #444;
+}
+
+/* Mood-Based Backgrounds */
+body[data-mood="happy"] {
+  background-color: #fff7c8;
+}
+
+body[data-mood="sad"] {
+  background-color: #c8d8ff;
+}
+
+body[data-mood="motivated"] {
+  background-color: #c8ffc8;
+}
+
+body[data-mood="relaxed"] {
+  background-color: #ffe1c8;
+}

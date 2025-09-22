@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Quote Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mood-Based Quote Generator 🌈</h1>
+    <p>Select your mood to see a quote:</p>
+
+    <div class="buttons">
+      <button onclick="showQuote('happy')">😊 Happy</button>
+      <button onclick="showQuote('sad')">😢 Sad</button>
+      <button onclick="showQuote('motivated')">💪 Motivated</button>
+      <button onclick="showQuote('relaxed')">😌 Relaxed</button>
+    </div>
+
+    <div id="quote-box">
+      <p id="quote">Your quote will appear here...</p>
+    </div>
+  </div>
+
+  <script>
+    const quotes = {
+      happy: "Happiness is not something ready made. It comes from your own actions. 🌟",
+      sad: "Tears come from the heart and not from the brain. 💧",
+      motivated: "Don’t watch the clock; do what it does. Keep going. 🚀",
+      relaxed: "Relax, refresh, recharge. Peace begins with a smile. 🌿"
+    };
+
+    function showQuote(mood) {
+      document.getElementById("quote").innerText = quotes[mood];
+      document.body.setAttribute("data-mood", mood);
+    }
+  </script>
+</body>
+</html>
